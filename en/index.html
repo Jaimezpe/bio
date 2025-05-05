@@ -10,310 +10,12 @@
     <meta property="og:description" content="Portolio" />
     <meta property="og:url" content="Jaime Ezpeleta" />
     <meta property="og:site_name" content="Jaime Ezpeleta | Portfolio" />
-    <link rel="shortcut icon" href="logo1.png">
+    <link rel="shortcut icon" href="/img/logo1.png">
     <title>Jaime | Portfolio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poetsen+One&family=Quicksand:wght@300..700&display=swap');
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
-    <style>
-        body {
-            background-image: url(fondo.png);
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 0;
-            color: white;
-            font-family: 'Geist Mono', Arial, sans-serif;
-        }
-
-        .barra {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 1px;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            color: white;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            flex-wrap: wrap;
-        }
-
-        .barra-izquierda {
-            display: flex;
-            align-items: center;
-        }
-
-        .barra-izquierda img {
-            height: 40px;
-            margin-right: 10px;
-            border-radius: 50%;
-        }
-
-        .barra-derecha {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            gap: 15px;
-        }
-
-        .barra-derecha a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .barra-derecha a:hover {
-            color: #ffcc00;
-        }
-
-        main {
-            padding-top: 80px;
-        }
-
-        @media (max-width: 768px) {
-            .barra {
-                height: auto;
-                flex-wrap: wrap;
-                padding: 10px;
-            }
-
-            .barra-derecha {
-                justify-content: flex-start;
-                width: 100%;
-            }
-
-            .barra-derecha a {
-                margin: 5px 10px;
-            }
-        }
-
-        .nombrebarra {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-
-        .sobremiuno {
-            padding-top: 20px;
-
-        }
-
-        .sobremiunonombre {
-            font-size: 60px;
-            color: #ffcc00;
-        }
-
-        .sobremiunoubi {
-            font-size: 15px;
-            color: #ffffff;
-        }
-
-        .sobremiunosubnombre {
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid;
-            width: fit-content;
-            animation: blink-caret 0.75s step-end infinite;
-            font-size: 30px;
-            margin-top: -50px;
-            margin-bottom: 40px;
-        }
-
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: rgb(255, 255, 255);
-            }
-        }
-
-
-
-        .linkx {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkx:hover::after {
-            content: "X";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f0f0f0;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .linkwhatsapp {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkwhatsapp:hover::after {
-            content: "Whatsapp";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f0f0f0;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .linkreddit {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkreddit:hover::after {
-            content: "Reddit";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f0f0f0;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .linkbluesky {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkbluesky:hover::after {
-            content: "Bluesky";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f0f0f0;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .linkmail {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkmail:hover::after {
-            content: "Mail";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f0f0f0;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .linkgithub {
-            position: relative;
-            text-decoration: none;
-        }
-
-        .linkgithub:hover::after {
-            content: "Github";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #ffffff;
-            padding: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            color: #333;
-        }
-
-
-
-        .sobremidos {
-            max-width: 600px;
-            margin-top: 100px;
-            flex-wrap: wrap;
-        }
-
-        .conocimientos {
-            padding-top: 80px;
-            align-items: center;
-        }
-
-        .proyectos {
-            margin-top: 60px;
-            width: 500px;
-        }
-
-        .barra-separacion {
-            width: 80%;
-            max-width: 600px;
-            height: 4px;
-            background-color: #b1b1b1;
-            margin: 20px auto;
-        }
-
-        .contacto {
-
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .contactox {
-            text-decoration: none;
-        }
-
-        .contactox:hover {
-            transform: scale(1.1);
-        }
-
-        .finaldepaginaa {
-            text-decoration: none;
-        }
-    </style>
-
-    <script>
-        const texto = "FrontEnd Developer";
-        let i = 0;
-        const velocidad = 120;
-
-        function escribirTexto() {
-            if (i < texto.length) {
-                document.getElementById("typewriter").innerHTML += texto.charAt(i);
-                i++;
-                setTimeout(escribirTexto, velocidad);
-            } else {
-                document.getElementById("typewriter").style.borderRight = '';
-            }
-        }
-
-
-
-        window.onload = escribirTexto;
-
-
-    </script>
-
-
+    
 </head>
 
 <body>
@@ -322,7 +24,7 @@
             <a href="https://jaimezpe.com" style="color: white; text-decoration: none;">
                 <div class="barra-izquierda">
                     <p>‎‎ ‎</p>
-                    <img src="logo.jpg" draggable="false">
+                    <img src="./img/logo.jpg" draggable="false">
                     <p class="Nombrebarra">Jaime Ezpeleta</p>
                 </div>
             </a>
@@ -344,25 +46,25 @@
             <p class="sobremiunosubnombre" id="typewriter"></p>
             <a href="https://maps.app.goo.gl/dqPvEKjtoz7yET7W9" style="text-decoration: none;"><p class="sobremiunoubi">🌐 Madrid, Spain</p></a>
             <center>
-                <a href="https://x.com/jaimezpe_" class="linkx"><img src="x_dark.svg" draggable="false"
+                <a href="https://x.com/jaimezpe_" class="linkx"><img src="./img/x_dark.svg" draggable="false"
                         style="height: 20px;"></a>
-                <a href="https://whatsapp.com/channel/0029VahgcfADuMRYOcbxGX0G" class="linkwhatsapp"><img
-                        src="whatsapp.svg" draggable="false" style="height: 20px;"></a>
-                <a href="https://www.reddit.com/user/jaimezpe/" class="linkreddit"><img src="reddit.svg"
+                <a href="https://www.reddit.com/user/jaimezpe/" class="linkreddit"><img src="./img/reddit.svg"
                         draggable="false" style="height: 20px;"></a>
-                <a href="https://bsky.app/profile/jaimezpe.bsky.social" class="linkbluesky"><img src="bluesky.svg"
+                <a href="https://bsky.app/profile/jaimezpe.bsky.social" class="linkbluesky"><img src="./img/bluesky.svg"
                         draggable="false" style="height: 20px;"></a>
-                <a href="mailto:info@jaimezpe.com" class="linkmail"><img src="gmail.svg" draggable="false"
+                <a href="mailto:info@jaimezpe.com" class="linkmail"><img src="./img/gmail.svg" draggable="false"
                         style="height: 20px;"></a>
-                <a href="https://github.com/jaimezpe" class="linkgithub"><img src="github-dark.svg" draggable="false"
+                <a href="https://github.com/jaimezpe" class="linkgithub"><img src="./img/github-dark.svg" draggable="false"
                         style="height: 20px;"></a>
+                <a href="https://linktr.ee/jaimezpe" class="linktree"><img src="./img/linktree.png" draggable="false"
+                    style="height: 20px;"></a>
             </center>
         </div>
         <div class="idsobremi" id="sobremi"></div>
 
 
         <div class="sobremidos">
-            <h1 style="font-family: 'Geist Mono'">About me <img src="A.png" draggable="false"
+            <h1 style="font-family: 'Geist Mono'">About me <img src="./img/A.png" draggable="false"
                     style="height: 50px; margin-bottom: -15px;"></h1>
             <p>Hi👋! I'm Jaime, <font color="aquamarine">FrontEnd developer</font>. I have always been curious about technology and eager to create. 2 years ago, I started with <font color="#ff9c21">web programming
                 </font> after <font color="#ff9c21">developing</font> JavaScript on 
@@ -380,7 +82,7 @@
         <div class="conocimientos" id="conocimientos">
             <center>
                 <h1>Knowledge</h1>
-                <img src="know.png" draggable="false" style="height: 505px;">
+                <img src="./img/know.png" draggable="false" style="height: 505px;">
             </center>
         </div>
 
@@ -389,8 +91,8 @@
         <div class="proyectos">
             <center>
                 <h1>Projects</h1>
-                <a href="https://founda.vercel.app"><img src="founda.png" draggable="false" style="height: 197px;"></a>
-                <a href="https://tisklast.vercel.app"><img src="tisklast.png" draggable="false" style="height: 210px;"></a>
+                <a href="https://founda.vercel.app"><img src="./img/founda.png" draggable="false" style="height: 197px;"></a>
+                <a href="https://tisklast.vercel.app"><img src="./img/tisklast.png" draggable="false" style="height: 210px;"></a>
             </center>
         </div>
 
@@ -411,7 +113,7 @@
         <div class="finaldepagina">
             
                 <div class="barra-separacion"></div>
-                <h4>Jaime Ezpeleta | 2024 <img src="logo1.png" draggable="false"
+                <h4>Jaime Ezpeleta | 2025 <img src="./img/logo1.png" draggable="false"
                         style="height: 30px; margin-bottom: -9px;">
                 </h4>
             
